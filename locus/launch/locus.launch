@@ -39,12 +39,12 @@
             output="screen">
 
            
-            <remap from="~LIDAR_TOPIC" to="$(arg pc_input)"/>
+            <remap from="~LIDAR_TOPIC" to="/wilbur/lidar_points"/>
 
-            <remap from="~ODOMETRY_TOPIC" to="visual_odom" if="$(eval robot_namespace.startswith('spot'))"/>
-            <remap from="~ODOMETRY_TOPIC" to="hero/wio_ekf/odom" if="$(eval robot_namespace.startswith('husky'))"/>
+            <remap from="~ODOMETRY_TOPIC" to="/wilbur/odom" if="$(eval robot_namespace.startswith('spot'))"/>
+            <remap from="~ODOMETRY_TOPIC" to="/wilbur/odom" if="$(eval robot_namespace.startswith('husky'))"/>
 
-            <remap from="~IMU_TOPIC" to="vn100/imu_wori_wcov"/>            
+            <remap from="~IMU_TOPIC" to="/wilbur/imu/data"/>            
             <remap from="~POSE_TOPIC" to="not_currently_used"/>
 
             <remap from="~SPACE_MONITOR_TOPIC" to="localizer_space_monitor/xy_cross_section"/>

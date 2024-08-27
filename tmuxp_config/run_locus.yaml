@@ -2,8 +2,8 @@ session_name: locus_dataset
 
 environment:
   # Path for the dataset
-  DATA_PATH: /home/costar/data/C_Husky4_Urban_Alpha1
-  DATA_FOLDER: rosbag/
+  DATA_PATH: /home/bruce/data/wilbur_outdoor
+  DATA_FOLDER: rosbag
   # Change the run number to save the output data in a different folder
   RUN_NUMBER: "test_01"
 
@@ -13,7 +13,7 @@ environment:
   NUM_VLP: "1"
 
   # Change the robot name and type to match the dataset 
-  ROBOT_NAME: husky4
+  ROBOT_NAME: husky1
   ROBOT_TYPE: husky
   # If unsure, leave as base1
   BASE_NAME: base1
