@@ -10,7 +10,7 @@ environment:
   # version of logging. If unsure, select 2 (the latest). 1 is for tunnel datasets
   LOG_VERSION: "2" 
   # Number of lidars to use (if available)
-  NUM_VLP: "3"
+  NUM_VLP: "1"
 
   # Change the robot name and type to match the dataset 
   ROBOT_NAME: husky4
