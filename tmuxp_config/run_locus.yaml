@@ -13,7 +13,7 @@ environment:
   NUM_VLP: "1"
 
   # Change the robot name and type to match the dataset 
-  ROBOT_NAME: husky1
+  ROBOT_NAME: husky4
   ROBOT_TYPE: husky
   # If unsure, leave as base1
   BASE_NAME: base1
